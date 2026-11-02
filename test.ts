@@ -63,14 +63,14 @@ basic.forever(function () {
 
 
     // New M3/M4 block: M3 forward at ~50% speed, then brake M3.
-    rekabit.runMotor34(MotorChannel34.M3, MotorDirection.Forward, 128)
+    rekabit.runMotor34(rekabit.MotorChannelM3M4.M3, MotorDirection.Forward, 128)
     basic.pause(1000)
-    rekabit.brakeMotor34(MotorChannel34.M3)
+    rekabit.brakeMotor34(rekabit.MotorChannelM3M4.M3)
 
     // M4 backward at ~100% speed, then brake M4.
-    rekabit.runMotor34(MotorChannel34.M4, MotorDirection.Backward, 255)
+    rekabit.runMotor34(rekabit.MotorChannelM3M4.M4, MotorDirection.Backward, 255)
     basic.pause(1000)
-    rekabit.brakeMotor34(MotorChannel34.M4)
+    rekabit.brakeMotor34(rekabit.MotorChannelM3M4.M4)
 
 
 
